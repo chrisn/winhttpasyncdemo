@@ -88,7 +88,7 @@ BOOL CALLBACK AsyncDialog(HWND hX, UINT message, WPARAM wParam, LPARAM lParam)
     case WM_INITDIALOG:
         hDialog = hX;
         // Set the default web sites.
-        SetDlgItemText(hX, IDC_URL1, L"http://www.bing.com");
+        SetDlgItemText(hX, IDC_URL1, L"https://www.bing.com");
         SendDlgItemMessage(hDialog, IDC_AUTOMATIC_PROXY_DETECTION, BM_SETCHECK, BST_CHECKED, 0);
         // Initialize the first context value.
         rcContext.hWindow = hX;
